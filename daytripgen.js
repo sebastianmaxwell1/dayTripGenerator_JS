@@ -39,4 +39,11 @@ console.log("Random Trip!")
     let entertainmentResult = entertainmentSelector();
     console.log(entertainmentResult);
 
-
+//User should type in field they dont like...
+    function reselectTripOptions(){
+        document.getElementById("destination-input").value = "";
+        document.getElementById("restaurant-input").value = "";
+        document.getElementById("transportation-input").value = "";
+        document.getElementById("entertainment-input").value = "";
+    }
+    console.log(reselectTripOptions)
