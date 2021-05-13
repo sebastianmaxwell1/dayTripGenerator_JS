@@ -23,4 +23,12 @@ console.log("Random Trip!")
     let restaurantResult = restaurantSelector();
     console.log(restaurantResult);
 
+    let transportationArray = ["Plane", "Boat", "Car", "Unicycle"];
+    function transportationSelector() {
+        let transportation = Math.floor(Math.random() * transportationArray.length);
+        return transportationArray[transportation];
+    }
+    let transportationResult = transportationSelector();
+    console.log(transportationResult);
+
 
