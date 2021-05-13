@@ -1,5 +1,5 @@
 "use strict";
-console.log("Hello")
+console.log("Random Trip!")
 
     // let destinationArray = ["Florida", "Ireland", "Japan", "Kansas", "Guam"]
     // let restaurantArray = ["Seafood", "Local Pub", "Sushi", "Chipotle", "Hard Rock Cafe"];
@@ -11,8 +11,16 @@ console.log("Hello")
         let destinations = Math.floor(Math.random() * destinationArray.length);
         return destinationArray[destinations];
     }
-    let result = destinationSelector();
-    console.log(result);
+    let destinationResult = destinationSelector();
+    console.log(destinationResult);
 
+
+    let restaurantArray = ["Seafood", "Local Pub", "Sushi", "Chipotle", "Hard Rock Cafe"];
+    function restaurantSelector() {
+        let restaurants = Math.floor(Math.random() * restaurantArray.length);
+        return restaurantArray[restaurants];
+    }
+    let restaurantResult = restaurantSelector();
+    console.log(restaurantResult);
 
 
