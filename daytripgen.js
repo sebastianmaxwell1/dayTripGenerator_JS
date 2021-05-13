@@ -31,4 +31,12 @@ console.log("Random Trip!")
     let transportationResult = transportationSelector();
     console.log(transportationResult);
 
+    let entertainmentArray = ["Live Music", "Theater", "Sporting Events", "Alcohol"];
+    function entertainmentSelector() {
+        let entertainment = Math.floor(Math.random() * entertainmentArray.length);
+        return entertainmentArray[entertainment];
+    }
+    let entertainmentResult = entertainmentSelector();
+    console.log(entertainmentResult);
+
 
